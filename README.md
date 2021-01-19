@@ -4,7 +4,7 @@ This is a simple video automation project I took on over this past winter break.
 
 Although this application is nowhere near as flashy as its audible counterpart, I had to jump over a few hurdles throughout the process that piqued my interest and made the project a fun challenge.
 
-Example images of the output video are shown below.
+Sample frames from the output video are shown below.
 
 ![welcome](/img/welcome.png)
 
