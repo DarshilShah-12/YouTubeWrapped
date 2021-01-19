@@ -1,4 +1,4 @@
-# YouTubeWrapped
+# YouTube Wrapped
 
 This is a simple video automation project I took on over this past winter break. Having been recently inspired by the *2020 Wrapped* feature on Spotify, I decided to implement a similar feature for YouTube, another platform on which I spend large quantities of time.
 
