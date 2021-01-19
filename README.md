@@ -8,6 +8,16 @@ Sample frames from the output video are shown below.
 
 ![welcome](/sample_frames/welcome.png)
 
+![stats](/sample_frames/stats.png)
+
+![channel_intro](/sample_frames/channel_intro.png)
+
+![ranking](/sample_frames/ranking.png)
+
+![clip](/sample_frames/clip.png)
+
+![thanks_for_watching](/sample_frames/thanks_for_watching.png)
+
 # Disclaimer
 
 As YouTube no longer provides access to a user's watch history through their latest API (forum [here](https://issuetracker.google.com/issues/35172816)), I had to resort to other more creative yet cumbersome methods of obtaining this watch history in a reasonable manner. As a result, you will NOT be able to clone and run *main.py* as it is to achieve similar results. However, I am currently working on a video in which I elaborate on this process. It will be posted on YouTube and I'll have a link to it on this repo shortly.
