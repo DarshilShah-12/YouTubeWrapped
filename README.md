@@ -6,7 +6,7 @@ Although this application is nowhere near as flashy as its audible counterpart, 
 
 Sample frames from the output video are shown below.
 
-![welcome](/img/welcome.png)
+![](/sample_frames/welcome.png)
 
 # Disclaimer
 
