@@ -1,17 +1,9 @@
 from bs4 import BeautifulSoup
-import re
 
-with open('C:/Users/whats/Desktop/youtube_watch_history.txt', encoding="utf8") as f:
+path = 'path/to/watch/history/file'
+
+with open(path, encoding="utf8") as f:
    soup = BeautifulSoup(f, "html.parser")
-
-# print(soup.find_all('a', attrs={'id':'video-title'})[0]["title"].strip()) # This finds the title
-# print(soup.find_all('yt-formatted-string', attrs={'id': 'text'})[0].text.strip())
-# print(soup.find_all('a', attrs={'href': re.compile('/channel/.*')})[0].text.strip()) # This finds the channel
-
-
-
-
-# Videos
 
 tmp = soup.find_all('a', attrs={'id':'video-title'})
 
@@ -113,9 +105,9 @@ arr_channels.sort(key=lambda x: x[1], reverse=True)
 print("Number of different channels:", len(arr_channels))
 print()
 
-# Top 5 songs
-top_5_songs = arr_videos[:5]
-print(top_5_songs)
+# Top 5 videos
+top_5_videos = arr_videos[:5]
+print(top_5_videos)
 print()
 
 # Top 5 channels
@@ -126,76 +118,3 @@ print()
 # Lowest viewed video
 print("Lowest viewed video:", min_view_video, "(" + str(min_views) + " views)")
 print()
-
-# print(data_dic)
-# print("-----------------------------")
-# print(channel_videos)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-# dic_videos = {}
-#
-# for i in range(len(tmp)):
-#    if (tmp[i]["title"].strip() in dic_videos):
-#       dic[tmp[i]["title"].strip()] += 1
-#    else:
-#       dic[tmp[i]["title"].strip()] = 1
-#
-# arr_videos = []
-#
-# for key in dic_videos:
-#    arr_videos.append([key, dic_videos[key]])
-#
-# arr_videos.sort(key=lambda x: x[1], reverse=True)
-# print(arr)
-
-
-
-
-
-# Channels
-
-# tmp2 = soup.find_all('a', attrs={'href': re.compile('/channel/.*')})
-# tmp3 = soup.find_all('a', attrs={'href': re.compile('/user/.*')})
-# tmp4 = soup.find_all('a', attrs={'href': re.compile('/c/.*')})
-#
-# dic_channels = {}
-#
-# for i in range(len(tmp2)):
-#    if (tmp2[i].text in dic_channels):
-#       dic_channels[tmp2[i].text] += 1
-#    else:
-#       dic_channels[tmp2[i].text] = 1
-#
-# for i in range(len(tmp3)):
-#    if (tmp3[i].text in dic_channels):
-#       dic_channels[tmp3[i].text] += 1
-#    else:
-#       dic_channels[tmp3[i].text] = 1
-#
-# for i in range(len(tmp4)):
-#    if (tmp4[i].text in dic_channels):
-#       dic_channels[tmp4[i].text] += 1
-#    else:
-#       dic_channels[tmp4[i].text] = 1
-#
-# arr_channels = []
-#
-# for key in dic_channels:
-#    arr_channels.append([key, dic_channels[key]])
-#
-# arr_channels.sort(key=lambda x: x[1], reverse=True)
-# print(arr_channels)
