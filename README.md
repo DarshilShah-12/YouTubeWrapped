@@ -1,3 +1,7 @@
+# Disclaimer
+
+As YouTube no longer provides access to a user's watch history through their latest API (forum [here](https://issuetracker.google.com/issues/35172816)), I had to resort to other more creative yet cumbersome methods of obtaining this watch history in a reasonable manner. As a result, you will NOT be able to clone and run *main.py* as it is to achieve similar results. However, I am currently working on a video in which I elaborate on this process. It will be posted on YouTube and I'll have a link to it on this repo shortly.
+
 # YouTube Wrapped
 
 This is a simple video automation project I took on over this past winter break. Having been recently inspired by the *2020 Wrapped* feature on Spotify, I decided to implement a similar feature for YouTube, another platform on which I spend large quantities of time.
@@ -17,8 +21,3 @@ Sample frames from the output video are shown below.
 ![clip](/sample_frames/clip.png)
 
 ![thanks_for_watching](/sample_frames/thanks_for_watching.png)
-
-# Disclaimer
-
-As YouTube no longer provides access to a user's watch history through their latest API (forum [here](https://issuetracker.google.com/issues/35172816)), I had to resort to other more creative yet cumbersome methods of obtaining this watch history in a reasonable manner. As a result, you will NOT be able to clone and run *main.py* as it is to achieve similar results. However, I am currently working on a video in which I elaborate on this process. It will be posted on YouTube and I'll have a link to it on this repo shortly.
-
