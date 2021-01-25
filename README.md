@@ -1,6 +1,6 @@
 # Disclaimer
 
-As YouTube no longer provides access to a user's watch history through their latest API (forum [here](https://issuetracker.google.com/issues/35172816)), I had to resort to other more creative yet cumbersome methods of obtaining this watch history in a reasonable manner. As a result, you will NOT be able to clone and run *main.py* as it is to achieve similar results. However, I am currently working on a video in which I elaborate on this process. It will be posted on YouTube and I'll have a link to it on this repo shortly.
+As YouTube no longer provides access to a user's watch history through their latest API (forum [here](https://issuetracker.google.com/issues/35172816)), I had to resort to other more creative but cumbersome methods of obtaining this watch history in a reasonable manner. As a result, you will NOT be able to clone and run *main.py* as it is to achieve similar results. However, I am currently working on a video in which I elaborate on this process. It will be posted on YouTube and I'll have a link to it on this repo shortly.
 
 # Run It Yourself
 1. Clone this repository.
