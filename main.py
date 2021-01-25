@@ -99,8 +99,8 @@ for key in video_dic:
 arr_videos.sort(key=lambda x: x[1], reverse=True)
 
 # Number of different videos
-print("Number of different videos:", len(arr_videos))
-print()
+# print("Number of different videos:", len(arr_videos))
+# print()
 
 arr_channels = []
 for key in channel_dic:
@@ -109,22 +109,22 @@ for key in channel_dic:
 arr_channels.sort(key=lambda x: x[1], reverse=True)
 
 # Number of different channels
-print("Number of different channels:", len(arr_channels))
-print()
+# print("Number of different channels:", len(arr_channels))
+# print()
 
 # Top 5 videos
 top_5_videos = arr_videos[:5]
-print(top_5_videos)
-print()
+# print(top_5_videos)
+# print()
 
 # Top 5 channels
 top_5_channels = arr_channels[:5]
-print(top_5_channels)
-print()
+# print(top_5_channels)
+# print()
 
 # Lowest viewed video
-print("Lowest viewed video:", min_view_video, "(" + str(min_views) + " views)")
-print()
+# print("Lowest viewed video:", min_view_video, "(" + str(min_views) + " views)")
+# print()
 
 # Format videos
 
@@ -160,7 +160,6 @@ for i in range(len(top_5_videos) - 1, -1, -1):
    side_banner_for_video = mpy.VideoClip(lambda t: render_side_banner_videos(t, i + 1, video_name, num_views, banner_str), duration=15)
 
    link = data_dic[top_5_videos[i][0]][0]
-   print(link)
    length = YouTube(link).length
 
    if (length > 1800):  # 30 minutes
@@ -205,7 +204,6 @@ for i in range(len(top_5_channels) - 1, -1, -1):
    side_banner_for_channel = mpy.VideoClip(lambda t: render_side_banner_channels(t, i + 1, channel, num_videos, banner_str), duration=15)
 
    link = channel_videos[top_5_channels[i][0]]
-   print(link)
    length = YouTube(link).length
 
    if (length > 1800):  # 30 minutes
@@ -246,7 +244,6 @@ num = trackNum(num, thanks_slide)
 clips = []
 
 for file in sorted(os.listdir("compile_videos")):
-   print(file)
    clips.append(mpy.VideoFileClip(os.path.join("compile_videos", file)))
 
 final_video = concatenate_videoclips(clips)
