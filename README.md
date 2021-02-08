@@ -1,10 +1,15 @@
-# Disclaimer
+# Aggregate Your Data
+As YouTube no longer provides access to a user's watch history through their latest API (forum [here](https://issuetracker.google.com/issues/35172816)), I had to resort to other more creative but cumbersome methods of obtaining this watch history in a reasonable manner. I have outlined the method I used below.
 
-As YouTube no longer provides access to a user's watch history through their latest API (forum [here](https://issuetracker.google.com/issues/35172816)), I had to resort to other more creative but cumbersome methods of obtaining this watch history in a reasonable manner. As a result, you will NOT be able to clone and run *main.py* as it is to achieve similar results. However, I am currently working on a video in which I elaborate on this process. It will be posted on YouTube and I'll have a link to it on this repo shortly.
+1. While logged in to your YouTube/Google account, go to the following url: [https://www.youtube.com/feed/history](https://www.youtube.com/feed/history). It will take you to a lazy-loading page that contains all of your watch history.
+2. Scroll like you've never scrolled before. At least that's what I did when I first started this project. It took about 2 hours and a bit of my sanity to scroll through my entire watch history for the year 2020 alone. Since then, I've found a pretty neat Google Chrome extension ([Scroll it!](https://chrome.google.com/webstore/detail/scroll-it/nlndoolndemidhlomaokpfbicfnjeeed)) that will speed up the process for you somewhat. You don't necessarily have to scroll to the previous year if you don't want to. I think scrolling even a couple months should be able to provide a somewhat interesting summary.
+3. Once you are satisfied with your scrolling efforts, press *F12*, or *Inspect Element*. Select the top-most **\<html\>** tag, right-click and select **Edit as HTML**. Select all and copy into a text file. Depending on the number of videos you've loaded in the previous step, it could potentially take a couple of minutes between each step.
+4. Save the text file.
 
 # Run It Yourself
 1. Clone this repository.
-2. Ensure you have all the Python packages list in *requirements.txt* installed. Otherwise, you can simply run `pip3 install -r requirements.txt`.
+2. Ensure you have all the Python packages list in *requirements.txt* installed. Otherwise, you can simply run `pip install -r requirements.txt`.
+3. Update **line 10** of *main.py* with the path to the text file containing your data, as described in the above section **Aggregate Your Data**.
 3. Run *main.py*.
 
 # YouTube Wrapped
