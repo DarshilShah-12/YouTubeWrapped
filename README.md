@@ -10,7 +10,7 @@ As YouTube no longer provides access to a user's watch history through their lat
 1. Clone this repository.
 2. Ensure you have all the Python packages list in *requirements.txt* installed. Otherwise, you can simply run `pip install -r requirements.txt`.
 3. Update **line 10** of *main.py* with the path to the text file containing your data, as described in the above section **Aggregate Your Data**.
-3. Run *main.py*.
+3. Run *main.py*. After a couple minutes of automated downloading, splicing and stitching of multiple videos, your video summary can be found under *your_youtube_wrapped.mp4*.
 
 # YouTube Wrapped
 
