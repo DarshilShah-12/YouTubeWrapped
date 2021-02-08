@@ -7,7 +7,7 @@ from render_slides import render_ranking_slide, render_stats_slide, render_thank
 
 VIDEO_SIZE = (1280, 720)
 
-path = 'C:/Users/whats/Desktop/youtube_watch_history.txt'
+path = 'path/to/your/data.txt'
 
 with open(path, encoding="utf8") as f:
    soup = BeautifulSoup(f, "html.parser")
